@@ -6,6 +6,8 @@ workflows:
   sample:
     jobs:
       - build-and-test
+          context:
+            - final_tdd
 jobs:
   build-and-test:
     docker:
